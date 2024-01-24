@@ -1,23 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><!--This is an auto generated document. Changes to this document may cause incorrect behavior.-->
-<wap-provisioningdoc>
-    <!-- External Storage Permission Profile -->
-    <characteristic type="AccessMgr">
-        <parm name="PermissionAccessPermissionName" value="6" />
+<?xml version="1.0" encoding="UTF-8"?><!--This is an auto generated document. Changes to this document may cause incorrect behavior.--><wap-provisioningdoc>
+  <characteristic type="ProfileInfo">
+    <parm name="created_wizard_version" value="11.0.2"/>
+  </characteristic>
+  <characteristic type="Profile">
+    <parm name="ProfileName" value="MES-Config"/>
+    <parm name="ModifiedDate" value="2024-01-24 19:10:30"/>
+    <parm name="TargetSystemVersion" value="10.5"/>
+    <characteristic type="AccessMgr" version="10.4">
+      <parm name="emdk_name" value=""/>
+      <parm name="PermissionAccessAction" value="1"/>
+      <parm name="PermissionAccessPermissionName" value="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+      <parm name="PermissionAccessPackageName" value="com.zebra.nilac.mestest"/>
+      <parm name="PermissionAccessSignature" value="MIIC5DCCAcwCAQEwDQYJKoZIhvcNAQEFBQAwNzEWMBQGA1UEAwwNQW5kcm9pZCBEZWJ1ZzEQMA4GA1UECgwHQW5kcm9pZDELMAkGA1UEBhMCVVMwIBcNMjIwMTA4MjAxMTA0WhgPMjA1MjAxMDEyMDExMDRaMDcxFjAUBgNVBAMMDUFuZHJvaWQgRGVidWcxEDAOBgNVBAoMB0FuZHJvaWQxCzAJBgNVBAYTAlVTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq+iqF9qSBQAuACiCU5nABKqfW+LDqPsLUZIlMhiRakeuJD/bMr3PQyBZcDT8+TaOufdqoSayHka9222X8tvl4aDfNYPuAXYZDXEsCMXPTTHn2RByziPQIfDEdMHETF/mLx2ebJlv78iIPHfQnc6Dv0eM/8oO+uvcLvXDsUJ6KWOXiMnyvYW5cbUIpDYlt2aZn/5NYUqGBupX7b9QWVUZZu5qoqDkrwu34ojwNvg810e56H6kvVko8sYC8d/ijG1FmpCOMz8d9wlNC3+KuP9xoRokaB3dWyFqHcrAoN/mxH7AzdkP83qXKRumKLqrPBsKolTvS6GPxBGOXDeqrSEBCwIDAQABMA0GCSqGSIb3DQEBBQUAA4IBAQAtiFYNKU6kLqM9q75KtEG8UhApO6ewmMcST/zo+NEWJyO6feyC+tpoYRoALhsohoGiudDNrn5VI5wiP8eR4RbYhzaVbHH5FlUZvadMa6PpURBb7l01R8tuzU0IjYdtavnmQwy92arPZ1PXiQGK+0IKb+ODH7kpq3TRucxUFChtave7/1H2mrZREZdOOiFel1B7NbQVTF1AFKtQ/MlbXOuyP0d4zXAK5C2lIo5DopiNgZJjviK8u/E+IKtb8ybSP99b6RrhmkHXgMtLCWJivGUVzAtHol7nQEAxaAayqly+PhgHmfE55V/0yHxvZsFLK3GT2G44ZQiS2oZYHe6Jquhh"/>
     </characteristic>
-    <characteristic type="Profile">
-        <parm name="ProfileName" value="AccessManager" />
-        <parm name="ModifiedDate" value="2022-08-01 14:01:49" />
-        <parm name="TargetSystemVersion" value="10.5" />
-
-        <characteristic type="AccessMgr" version="10.4">
-            <parm name="emdk_name" value="" />
-            <parm name="PermissionAccessAction" value="1" />
-            <parm name="PermissionAccessPermissionName"
-                value="android.permission.MANAGE_EXTERNAL_STORAGE" />
-            <parm name="PermissionAccessPackageName" value="com.zebra.nilac.mestest" />
-            <parm name="PermissionAccessSignature"
-                value="MIIC5DCCAcwCAQEwDQYJKoZIhvcNAQEFBQAwNzEWMBQGA1UEAwwNQW5kcm9pZCBEZWJ1ZzEQMA4GA1UECgwHQW5kcm9pZDELMAkGA1UEBhMCVVMwIBcNMjIwNTEyMDg1NDA1WhgPMjA1MjA1MDQwODU0MDVaMDcxFjAUBgNVBAMMDUFuZHJvaWQgRGVidWcxEDAOBgNVBAoMB0FuZHJvaWQxCzAJBgNVBAYTAlVTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqFON7xnLjUCBau4ZKgVlgN0jdP9JfcKE8nev7F5eD/OeLZOR/GCVzJrj29MohR2eonVDWM+kCdBkth8WbsMgc9oLIkdhq1OeOH2JjQRV38X4MQfR/ldz/NoVLPj9oyCNEBEvzCe1z9siHKNWpSqcZj6aimqpyHkBH+2mD9PKyt4a6520J+61E1MOJiS39Ch8pNxJsJ5c9/w1Hb2sURYLe33TPOZfhjcqh5BhNn+qVBoUvabcKuVxh+m0+ltaM1nHbFpKMa+foQVsbQB8wmLiB7F+yE2R0d4UmBqErAM/tQOKp0ZLu3L1jySbRLS1Sf+IbT8ymnirwcvMXC/KzQ/lFQIDAQABMA0GCSqGSIb3DQEBBQUAA4IBAQCF+JRAC8kPuAJxIxVOxCLwcXS5FvwNwbgEvh8hEbAJwYYelN6weq9EmZurfSzGmxPkhSiqp6F9biTcHHUOKGR9Yty1uZkoRl1/+VLVzGrvPfdFwGoXXoSBPrx3Lj36RysZw0kwwJMD+5ovTzemsiVjm92YrAxFXO8XhXRVHGmncLRNi36Mzm6VdtnhkIKlALFLYvxHEQpghOw2K1Po5XJqFw5twQsv+snoFrjv+8f8MltoqEuVnUhP/NRAF1kUbt1IhgPzx0m5HXAHfl5S06p97UbIFtmvBNSFQyMMwoTXUvWcIuHPImcCDdFcB1g4j//TlznE8vgkpiCrQV/q2zb8" />
-        </characteristic>
-    </characteristic>
-
+  </characteristic>
 </wap-provisioningdoc>

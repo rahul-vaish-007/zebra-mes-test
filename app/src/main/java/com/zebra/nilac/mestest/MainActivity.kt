@@ -1,10 +1,9 @@
 package com.zebra.nilac.mestest
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Environment
 import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.zebra.nilac.emdkloader.EMDKLoader
 import com.zebra.nilac.emdkloader.ProfileLoader
 import com.zebra.nilac.emdkloader.interfaces.EMDKManagerInitCallBack
@@ -38,18 +37,21 @@ class MainActivity : AppCompatActivity() {
     private fun grantManageExternalStoragePermission() {
         Log.i(TAG, "Granting External Storage Permission through MX")
         ProfileLoader().processProfile(
-            "AccessManager",
+            "MES-Config",
             null,
             object : ProfileLoaderResultCallback {
                 override fun onProfileLoadFailed(message: String) {
-                    Toast.makeText(
-                        this@MainActivity,
-                        "Failed to process profile! Check logs...",
-                        Toast.LENGTH_LONG
-                    ).show()
+                    runOnUiThread {
+                        Toast.makeText(
+                            this@MainActivity,
+                            "Failed to process profile! Check logs...",
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
                 }
 
                 override fun onProfileLoaded() {
+                    Log.i(TAG, "Successfully granted permission to the app")
                     finish()
                 }
             })
